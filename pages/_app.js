@@ -1,6 +1,5 @@
 import layoutStyle from '../styles/Layout.module.css'
 import navbarStyle from '../styles/Navbar.module.css'
-import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function simpleBlog({ Component, pageProps }) {
     return (

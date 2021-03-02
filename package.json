@@ -9,7 +9,6 @@
   "author": "Dostoievski Batista",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/icons": "^4.11.2",
     "knex": "^0.21.18",
     "next": "^10.0.7",
     "react": "^17.0.1",

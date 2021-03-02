@@ -1,19 +1,19 @@
 import postStyle from '../styles/Posts.module.css'
 
 export async function getStaticProps() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
-    let teste = await res.json()
+    let res = await fetch(`${process.env.SERVER_URL}api/posts`)
+    let posts = await res.json()
 
-    return { props: { teste } }
+    return { props: { posts } }
 }
 
 
-export default function HomePage({ teste }) {
+export default function HomePage({ posts }) {
     return (<>
-        {teste.map(e => {
+        {posts.map(e => {
             return (<div key={e.id} className={postStyle.post}>
                 <h1>{e.title}</h1>
-                <p>{e.body}</p>
+                <p>{e.text}</p>
             </div>)
         })}
     </>)
