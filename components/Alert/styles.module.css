@@ -1,0 +1,35 @@
+
+.loadingContainer {
+    position: absolute;
+    top: 1rem;
+    right: 50%;
+    z-index: 4000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2);
+    padding: 5px 20px;
+}
+
+.AlertloadingText {
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.loadingIcon {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #1965F038;
+    border-top-color: #1965F0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
